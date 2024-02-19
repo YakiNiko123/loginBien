@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <body>
+        <div class="contenedor">
+            <figure>
+                <img class="logo" src="../static/img/Tula blanca.png" alt="Logo">
+            </figure>
+                <form action="/login"method="POST">
+                    <h2>Iniciar sesión</h2>
+                    <h4>{{error1}}</h4>
+                    <h4>{{error2}}</h4>
+                    <input type="email" name="correo_enviado" id="correo_enviado" placeholder="Correo Electronicó" inputmode="email" required>
+                    <input type="password" name="contrasena" id="contrasena" placeholder="Contraseña" required>
+                    <input type="submit" value="Ingresar">
+                    <div class="forgot-password">
+                    <a href="/recuperar">¿Olvidaste tu contraseña?</a>
+                    </div>
+                </form>
+            </div>
+    </body>
+</body>
+
+

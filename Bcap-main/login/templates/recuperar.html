@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/recuperar.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="contenedor">
+        
+        <div class="recuadro">
+            <form action="/cambio_contrasena" method="post">
+                <h1>Ingrese su correo</h1>
+                <h3>{{mensaje}}</h3>
+                <label for="correo">Correo de Recuperación</label>
+                <input type="text" name="correo" id="correo" inputmode="email" required>
+                
+                <button type="submit" class="enviar">enviar</button>
+                
+            </form>
+    
+
+            
+        </div>
+
+    </div>
+</body>
+</html>

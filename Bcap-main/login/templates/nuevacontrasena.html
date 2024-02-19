@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/nuevacontrasena.css">
+    <title>Codigo de verificacion</title>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="recuadro">
+
+            <form action="/guardanueva" method="post">
+                <input type="email" name="email" id="email" hidden value="{{email}}">
+
+                <h2>{{mensaje}}</h2>
+                <h2>digite su nueva contraseña</h2>
+                <input type="password" name="contraseña1" id="contraseña1" inputmode="password"  
+                pattern="[a-zA-Z0-9!@#$%^&*()_+{}\[\]:;<>,.?~\\/\-='\\s]*" tab-index="1" required>
+                
+            
+                <h2>digite de nuevo su contraseña</h2>
+                <input type="password" name="contraseña2" id="contraseña2" inputmode="password" 
+                pattern="[A-Za-z1]{5,10}"maxlength="10" minlength="5" tab-index="1"required>
+
+                <button type="submit">Cambiar</button>
+                </form>
+        </div>
+    </div>
+
+    <script>
+        function cambiarContrasena() {
+            alert('Contraseña cambiada');
+            // Aquí puedes agregar la lógica para cambiar la contraseña
+        }
+    </script>
+    
+
+</body>
+
+
+    
+
+</body>
+
+</html>

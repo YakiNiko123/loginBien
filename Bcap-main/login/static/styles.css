@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost&display=swap');
+
+*{
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;    
+}
+body,html{
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url("img/fondo.jpeg");
+  background-size: cover;
+  background-position: center;
+  font-family: Arial, sans-serif;
+}
+
+form {
+  box-shadow: 0px 0px 20px rgb(0, 0, 0);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 20px;
+  width: 300px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+img.logo {
+  display: block;
+  width: 200px;
+  height: auto;
+  position: absolute;
+  top: 6%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+input[type="email"],
+input[type="password"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-family: 'Jost', sans-serif;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: hsla(126, 81%, 37%, 0.925);
+  color: rgb(255, 255, 255);
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+input[type="submit"]:hover {
+  background-color: hsl(126, 81%, 27%);
+}
+
+.forgot-password {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.forgot-password a {
+  color: hsla(126, 81%, 37%, 0.925);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.contenedor{
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
